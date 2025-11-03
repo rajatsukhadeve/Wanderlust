@@ -45,7 +45,7 @@ async function main(){
 const store = MongoStore.create({
     mongoUrl:dburl,
     crypto:{
-        secret:process.env.SECRET
+        secret:process.env.SECRET,
     },
     touchAfter: 24*3600,
 });
@@ -64,9 +64,9 @@ const sessionOptions ={
     }
 };
 
-// app.get("/",(req,res)=>{
-//     res.send("Hi, i am root");
-// });
+app.get("/",(req,res)=>{
+    res.redirect("/listings");
+});
 
 
 
