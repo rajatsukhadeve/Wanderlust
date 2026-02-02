@@ -1,11 +1,9 @@
-if(process.env.NODE_ENV!="production"){
-    require('dotenv').config();
-}
+require('dotenv').config();
 console.log(process.env.SECRET);
 
 const express= require('express');
 const app=express();
-const port=8080;
+const port=process.env.PORT || 8080;
 const mongoose = require('mongoose');
 const session = require('express-session');
 const MongoStore = require('connect-mongo');
