@@ -8,7 +8,7 @@ This project demonstrates real-world features like authentication, CRUD operatio
 
 ## 🚀 Live Demo
 
-> 🔗 Coming Soon  
+> https://wanderlust-d22g.onrender.com/
 
 
 ---
