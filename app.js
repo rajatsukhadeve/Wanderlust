@@ -134,5 +134,5 @@ app.use((err,req,res,next)=>{
     // res.status(statusCode).send(message);
  })
 app.listen(port,()=>{
-    console.log("server is working");
+    console.log(`server is working on ${port}`);
 });
